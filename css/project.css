@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    
+}
+
+.sitelogo img {
+    max-width: 50px;
+}
+
+
+.site-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.site-nav ul li a:hover {
+    color: #0d6efd;
+}
+
+.btn-side button {
+    padding: 10px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-side button:hover {
+    background: #084298;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container2{
+    display: flex;
+    z-index: 999;
+
+}
+
+
+.hero-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-section::after {
+    content: " ";
+    background: #00000061;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.hero-section .inner-content {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .inner-content h1 {
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    font-weight: 700;
+    max-width: 600px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+.hero-section .inner-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+.hero-section .inner-content .dft-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .inner-content button {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    background: #fff;
+    height: 50px;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hero-section .inner-content button:hover {
+    background: #000;
+    color: #fff;
+}
